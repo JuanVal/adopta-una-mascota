@@ -1,0 +1,55 @@
+.portada {
+  height: 100vmax;
+  background: rgba(0, 0, 0, 0.177);
+  position: relative;
+}
+
+.infoBanner {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background: rgba(0, 0, 0, 0.565); */
+}
+
+:is(.tituloInfo,.descripcionInfo){
+  color: var(--color-secondary);
+  margin: 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.tituloInfo {
+  font-size: 6vmax;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+.descripcionInfo {
+  font-size: 3vmax;
+  text-align: justify;
+
+  color: var(--color-silver);
+}
+
+@media screen and (min-width: 768px) {
+  
+  .infoBanner {
+    width: 50vmax;
+    padding: 2rem;
+  }
+  .tituloInfo {
+    font-size: 4vmax;
+  }
+  .descripcionInfo {
+    font-size: 2vmax;
+  }
+}
+@media screen and (min-width: 1024px) {
+  
+  
+  
+}
